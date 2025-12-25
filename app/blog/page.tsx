@@ -3,6 +3,7 @@ import { getContents } from "@/utils/get-contents"
 
 export default function BlogPage() {
   const contents = getContents()
+  console.log(":::: contents:", contents)
 
   return (
     <div className="flex flex-col">

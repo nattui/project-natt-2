@@ -25,12 +25,12 @@ export function getContents(): Content[] {
     const fileContent = fs.readFileSync(filePath, "utf-8")
     const slug = file.replace(".mdx", "")
 
-    const { data: matterData } = matter(fileContent)
+    const { content: matterContent, data: matterData } = matter(fileContent)
     const title = matterData.title ?? ""
     const date = matterData.date ?? ""
 
     return {
-      content: fileContent,
+      content: matterContent,
       date,
       path: filePath,
       slug,
