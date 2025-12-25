@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
-import "@/app/globals.css"
 import type { PropsWithChildren } from "react"
+import "@/styles/global.css"
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -16,7 +16,10 @@ const geistMono = Geist_Mono({
 export default function RootLayout(props: PropsWithChildren) {
   const { children } = props
   return (
-    <html lang="en">
+    <html
+      className="color-gray-sage color-primary-green"
+      lang="en"
+    >
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
     </html>
   )
