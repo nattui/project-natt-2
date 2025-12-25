@@ -1,19 +1,10 @@
-import fs from "node:fs"
-import path from "node:path"
+import { getContents } from "@/utils/get-contents"
 
 export const dynamicParams = false
 
 export function generateStaticParams() {
-  // Gets files in `content` directory
-  const files = fs.readdirSync(path.join("content"))
-
-  // Get params with slug
-  const params = files.map((filename) => {
-    return {
-      slug: filename.replace(".mdx", ""),
-    }
-  })
-
+  const contents = getContents()
+  const params = contents.map(({ slug }) => ({ slug }))
   return params
 }
 
@@ -25,5 +16,9 @@ export default async function BlogPostPage(props: BlogPostPageProps) {
   const { slug } = await props.params
   const { default: Post } = await import(`@/content/${slug}.mdx`)
 
-  return <Post />
+  return (
+    <div className="flex flex-col [&>h2:first-of-type]:hidden [&>hr:first-of-type]:hidden">
+      <Post className="" />
+    </div>
+  )
 }

@@ -1,22 +1,20 @@
 import Link from "next/link"
+import { getContents } from "@/utils/get-contents"
 
 export default function BlogPage() {
-  // I want to show all the blog posts in a list
+  const contents = getContents()
 
   return (
     <div className="flex flex-col">
-      <Link
-        className="w-fit hover:underline"
-        href="/blog/2025-12-25-hello"
-      >
-        Hello
-      </Link>
-      <Link
-        className="w-fit hover:underline"
-        href="/blog/2025-12-25-world"
-      >
-        World
-      </Link>
+      {contents.map((content) => (
+        <Link
+          className="w-fit hover:underline"
+          href={`/blog/${content.slug}`}
+          key={content.slug}
+        >
+          {content.title}
+        </Link>
+      ))}
     </div>
   )
 }
