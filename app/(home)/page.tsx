@@ -1,6 +1,16 @@
-import { Spacer } from "@nattui/react-components"
+"use client"
 
-export default function Home() {
+import { IconNotebook } from "@nattui/icons-line"
+import { Button, Spacer } from "@nattui/react-components"
+import { useRouter } from "next/navigation"
+
+export default function HomePage() {
+  const router = useRouter()
+
+  function onRoute() {
+    router.push("/blog")
+  }
+
   return (
     <div className="flex flex-col">
       {/* Topbar */}
@@ -19,6 +29,16 @@ export default function Home() {
           Design engineer crafting refined applications, interfaces, and experiences. Dreamer and
           doer.
         </p>
+        <Spacer className="h-24" />
+        <div className="mx-auto flex items-center justify-center">
+          <Button
+            iconEnd={<IconNotebook size={16} />}
+            onClick={onRoute}
+            variant="secondary"
+          >
+            Blog
+          </Button>
+        </div>
       </section>
 
       {/* Section 2 */}

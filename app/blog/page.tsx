@@ -1,0 +1,49 @@
+"use client"
+
+import { IconNotebook } from "@nattui/icons-line"
+import { Button, Spacer } from "@nattui/react-components"
+import { useRouter } from "next/navigation"
+
+export default function BlogPage() {
+  const router = useRouter()
+
+  function onRoute() {
+    router.push("/")
+  }
+
+  return (
+    <div className="flex flex-col">
+      {/* Topbar */}
+      <div className="d fixed top-0 right-0 left-0 z-10 h-64 bg-gray-2">topbar</div>
+
+      {/* Section 1 */}
+      <section className="h-[1200px]">
+        <Spacer className="h-192" />
+        <h1 className="text-center text-72 leading-[1.1]">Blog</h1>
+        <Spacer className="h-16" />
+        <p className="mx-auto max-w-512 hyphens-none text-center text-[22px]">
+          Design engineer crafting refined applications, interfaces, and experiences. Dreamer and
+          doer.
+        </p>
+        <Spacer className="h-24" />
+        <div className="mx-auto flex items-center justify-center">
+          <Button
+            iconEnd={<IconNotebook size={16} />}
+            onClick={onRoute}
+            variant="secondary"
+          >
+            Home
+          </Button>
+        </div>
+      </section>
+
+      {/* Section 2 */}
+      <section className="d h-[2200px]">
+        <div className="d sticky top-64 h-dvh w-[200px] bg-gray-2">cat</div>
+      </section>
+
+      {/* Section 3 */}
+      <section className="h-[600px]">footer</section>
+    </div>
+  )
+}
