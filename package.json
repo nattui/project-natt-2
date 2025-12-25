@@ -6,6 +6,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.3.10",
+    "@nattui/icons-filled": "npm:@central-icons-react/round-filled-radius-1-stroke-2@1.1.22",
+    "@nattui/icons-line": "npm:@central-icons-react/round-outlined-radius-1-stroke-2@1.1.22",
     "@nattui/react-components": "0.0.26",
     "@nattui/tailwind-colors": "0.0.4",
     "@nattui/tailwind-exact": "0.0.3",
