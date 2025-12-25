@@ -10,19 +10,7 @@ export default function RootLayout(props: PropsWithChildren) {
       className="color-gray-sage color-primary-green"
       lang="en"
     >
-      <body
-        className={[
-          "antialiased",
-          "bg-gray-2",
-          "font-sans",
-          "leading-1-5",
-          "text-16",
-          "text-gray-11",
-          fontCssVariables,
-        ].join(" ")}
-      >
-        {children}
-      </body>
+      <body className={fontCssVariables}>{children}</body>
     </html>
   )
 }
