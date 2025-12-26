@@ -42,3 +42,16 @@ input::-webkit-datetime-edit-year-field:focus {
   color: var(--color-gray-2);
   background: var(--color-primary-10);
 }
+
+/* Sugar-high syntax highlighting */
+:root {
+  --sh-class: #2d5e9d;
+  --sh-comment: #a19595;
+  --sh-entity: #249a97;
+  --sh-identifier: var(--color-gray-12);
+  --sh-jsxliterals: #6266d1;
+  --sh-keyword: #f47067;
+  --sh-property: #0550ae;
+  --sh-sign: var(--color-gray-11);
+  --sh-string: #00a99a;
+}

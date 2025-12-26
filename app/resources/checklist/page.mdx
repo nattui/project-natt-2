@@ -6,4 +6,29 @@ I am trying out Specification Driven Development (SDD) for creating a react comp
 
 ## Input
 
-input should have a different style between `:focus-visible` and `:focus`.
+The `input` element should have a visible focus indicator.
+
+```css
+.input:focus-visible {
+  outline-color: var(--color-primary-9, #e93d82);
+}
+```
+
+The `input` placeholder text should not be selectable.
+
+```css
+.input::placeholder {
+  user-select: none;
+}
+```
+
+<Label htmlFor="email">Email</Label>
+<Spacer className="h-4" />
+<Input
+  className="max-w-320"
+  id="email"
+  name="email"
+  placeholder="Enter your email"
+  size={44}
+  type="text"
+/>

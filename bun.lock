@@ -16,6 +16,7 @@
         "next": "16.1.1",
         "react": "19.2.3",
         "react-dom": "19.2.3",
+        "sugar-high": "0.9.5",
       },
       "devDependencies": {
         "@biomejs/biome": "2.3.10",
@@ -477,6 +478,8 @@
     "style-to-object": ["style-to-object@1.0.14", "", { "dependencies": { "inline-style-parser": "0.2.7" } }, "sha512-LIN7rULI0jBscWQYaSswptyderlarFkjQ+t79nzty8tcIAceVomEVlLzH5VP4Cmsv6MtKhs7qaAiwlcp+Mgaxw=="],
 
     "styled-jsx": ["styled-jsx@5.1.6", "", { "dependencies": { "client-only": "0.0.1" }, "peerDependencies": { "react": ">= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0" } }, "sha512-qSVyDTeMotdvQYoHWLNGwRFJHC+i+ZvdBRYosOFgC+Wg1vx4frN2/RG/NA7SYqqvKNLf39P2LSRA2pu6n0XYZA=="],
+
+    "sugar-high": ["sugar-high@0.9.5", "", {}, "sha512-eirwp9p7QcMg6EFCD6zrGh4H30uFx2YtfiMJUavagceP6/YUUjLeiQmis7QuwqKB3nXrWXlLaRumCqOd9AKpSA=="],
 
     "tailwindcss": ["tailwindcss@4.1.18", "", {}, "sha512-4+Z+0yiYyEtUVCScyfHCxOYP06L5Ne+JiHhY2IjR2KWMIWhJOYZKLSGZaP5HkZ8+bY0cxfzwDE5uOmzFXyIwxw=="],
 

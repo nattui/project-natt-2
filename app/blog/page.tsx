@@ -8,7 +8,7 @@ export default function BlogPage() {
   return (
     <>
       <h1 className="mx-auto text-center">Blog</h1>
-      <p className="mx-auto text-center">My thoughts on design and engineering</p>
+      {/* <p className="mx-auto text-center">My thoughts on design and engineering</p> */}
       <Spacer className="h-32" />
 
       {contents.map((content) => (

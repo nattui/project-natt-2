@@ -1,4 +1,4 @@
-import { Inter as fontSans } from "next/font/google"
+import { JetBrains_Mono as fontMono, Inter as fontSans } from "next/font/google"
 import localFont from "next/font/local"
 
 // Martina Plantijn 300
@@ -7,9 +7,10 @@ const display = localFont({
   variable: "--font-display",
 })
 
-const mono = localFont({
-  src: [{ path: "./font-mono-400.ttf", weight: "400" }],
+const mono = fontMono({
+  subsets: ["latin"],
   variable: "--font-mono",
+  weight: ["400", "500"],
 })
 
 const sans = fontSans({
