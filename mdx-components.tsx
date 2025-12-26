@@ -17,6 +17,12 @@ const components: MDXComponents = {
       {...props}
     />
   ),
+  h3: (props) => (
+    <h3
+      className="mb-16 text-20"
+      {...props}
+    />
+  ),
   Input,
   Label,
   p: (props) => (
