@@ -14,7 +14,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Section 1 */}
-      <section className="flex h-[1200px] flex-col px-16">
+      <section className="flex flex-col px-16">
         <Spacer className="h-192" />
         <h1 className="mx-auto text-center text-72 leading-[1.1] max-768:max-w-320 max-768:text-48">
           Software
@@ -37,6 +37,7 @@ export default function HomePage() {
           </Button>
         </div>
       </section>
+      <Spacer className="h-192" />
 
       {/* Section 2 */}
       <section className="d h-[2200px]">
@@ -46,7 +47,7 @@ export default function HomePage() {
       </section>
 
       {/* Section 3 */}
-      <section className="h-[600px]">footer</section>
+      <section className="h-[320px]">footer</section>
     </div>
   )
 }
