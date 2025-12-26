@@ -14,12 +14,18 @@ export function Topbar() {
           <Logotype />
         </Link>
 
-        <div className="flex items-center gap-x-8">
+        <div className="flex items-center gap-x-12">
           <Link
             className="font-500 text-14 hover:underline"
             href="/blog"
           >
             Blog
+          </Link>
+          <Link
+            className="font-500 text-14 hover:underline"
+            href="/resources/checklist"
+          >
+            Checklist
           </Link>
         </div>
       </div>
