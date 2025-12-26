@@ -16,7 +16,7 @@ export function Topbar() {
         </Link>
 
         {/* Navigation */}
-        <nav className="flex items-center gap-x-12">
+        <nav className="flex items-center gap-x-16">
           <Link
             className="font-500 text-14 hover:underline"
             href="/blog"
