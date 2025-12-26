@@ -1,6 +1,5 @@
-import { Spacer } from "@nattui/react-components"
+import { Input, Label, Spacer } from "@nattui/react-components"
 import type { PropsWithChildren } from "react"
-import { Input } from "@/components/ui/input"
 
 export default function ResourcesLayout(props: PropsWithChildren) {
   const { children } = props
@@ -10,9 +9,15 @@ export default function ResourcesLayout(props: PropsWithChildren) {
       <Spacer className="h-64" />
       <div className="mx-auto flex max-w-672 flex-col">
         {children}
+        <Label htmlFor="email">Email</Label>
+        <Spacer className="h-4" />
         <Input
-          isValid={true}
+          className="max-w-320"
+          id="email"
+          name="email"
           placeholder="Enter your email"
+          size={44}
+          type="text"
         />
       </div>
     </div>
