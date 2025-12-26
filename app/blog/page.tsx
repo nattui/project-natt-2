@@ -1,3 +1,4 @@
+import { Spacer } from "@nattui/react-components"
 import Link from "next/link"
 import { getContents } from "@/utils/get-contents"
 
@@ -5,7 +6,13 @@ export default function BlogPage() {
   const contents = getContents()
 
   return (
-    <div className="flex flex-col pt-64">
+    <>
+      <h1 className="mx-auto text-center">The Interface</h1>
+      <p className="mx-auto text-center">
+        Stay up to date with my thoughts on design and engineering
+      </p>
+      <Spacer className="h-32" />
+
       {contents.map((content) => (
         <Link
           className="w-fit hover:underline"
@@ -15,6 +22,6 @@ export default function BlogPage() {
           {content.title}
         </Link>
       ))}
-    </div>
+    </>
   )
 }
