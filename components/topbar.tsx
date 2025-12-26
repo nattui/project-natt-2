@@ -1,0 +1,28 @@
+import Link from "next/link"
+import { Logomark } from "@/components/logomark"
+import { Logotype } from "@/components/logotype"
+
+export function Topbar() {
+  return (
+    <div className="fixed top-0 right-0 left-0 z-10 flex h-64 items-center border-gray-6 border-b bg-gray-2 px-16">
+      <div className="mx-auto flex w-full max-w-[860px] items-center justify-between">
+        <Link
+          className="-ml-8 flex w-fit items-center justify-center gap-x-8 p-8 transition-opacity hover:opacity-50"
+          href="/"
+        >
+          <Logomark />
+          <Logotype />
+        </Link>
+
+        <div className="flex items-center gap-x-8">
+          <Link
+            className="font-500 hover:underline"
+            href="/blog"
+          >
+            Blog
+          </Link>
+        </div>
+      </div>
+    </div>
+  )
+}

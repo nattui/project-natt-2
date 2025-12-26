@@ -6,7 +6,7 @@ export default function BlogPage() {
   console.log(":::: contents:", contents)
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col pt-64">
       {contents.map((content) => (
         <Link
           className="w-fit hover:underline"

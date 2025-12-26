@@ -1,16 +1,21 @@
 import type { Metadata, Viewport } from "next"
 import type { PropsWithChildren } from "react"
+import { Topbar } from "@/components/topbar"
 import { fontCssVariables } from "@/utils/fonts"
 import "@/styles/global.css"
 
 export default function RootLayout(props: PropsWithChildren) {
   const { children } = props
+
   return (
     <html
-      className="color-gray-sage color-primary-green"
+      className="color-gray-mauve color-primary-crimson"
       lang="en"
     >
-      <body className={fontCssVariables}>{children}</body>
+      <body className={fontCssVariables}>
+        <Topbar />
+        {children}
+      </body>
     </html>
   )
 }

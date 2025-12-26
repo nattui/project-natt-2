@@ -13,9 +13,6 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col">
-      {/* Topbar */}
-      <div className="d fixed top-0 right-0 left-0 z-10 h-64 bg-gray-2">topbar</div>
-
       {/* Section 1 */}
       <section className="flex h-[1200px] flex-col px-16">
         <Spacer className="h-192" />
@@ -43,7 +40,9 @@ export default function HomePage() {
 
       {/* Section 2 */}
       <section className="d h-[2200px]">
-        <div className="d sticky top-64 h-dvh w-[200px] bg-gray-2">cat</div>
+        <div className="sticky top-64 h-[calc(100dvh-64px)] w-[200px] border-gray-6 border-r bg-gray-2">
+          cat
+        </div>
       </section>
 
       {/* Section 3 */}
