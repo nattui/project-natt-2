@@ -9,12 +9,7 @@ export default function ResourcesLayout(props: PropsWithChildren) {
       <Spacer className="h-64" />
       <div className="mx-auto flex max-w-672 flex-col">
         {children}
-        <Label
-          className="font-500"
-          htmlFor="email"
-        >
-          Email
-        </Label>
+        <Label htmlFor="email">Email</Label>
         <Spacer className="h-4" />
         <Input
           className="max-w-320"

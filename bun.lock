@@ -8,7 +8,7 @@
         "@mdx-js/react": "3.1.1",
         "@nattui/icons-filled": "npm:@central-icons-react/round-filled-radius-1-stroke-2@1.1.83",
         "@nattui/icons-line": "npm:@central-icons-react/round-outlined-radius-1-stroke-2@1.1.83",
-        "@nattui/react-components": "0.0.28",
+        "@nattui/react-components": "0.0.29",
         "@nattui/tailwind-colors": "0.0.4",
         "@nattui/tailwind-exact": "0.0.3",
         "@next/mdx": "16.1.1",
@@ -132,7 +132,7 @@
 
     "@nattui/icons-line": ["@central-icons-react/round-outlined-radius-1-stroke-2@1.1.83", "", { "peerDependencies": { "react": ">=14.0.0 <= 19" } }, "sha512-zsvybyQ3MyqBvF3UnrRqB2jcwLCVY3Z7jyxrjQl/h1a3vpf6uhsv4qZlvheOakq4nXGWnOdmZd/i3PotqpNBlg=="],
 
-    "@nattui/react-components": ["@nattui/react-components@0.0.28", "", { "peerDependencies": { "react": "^18.0.0 || ^19.0.0", "react-dom": "^18.0.0 || ^19.0.0" } }, "sha512-Uonz4koJB5lBKHdxGc2+wzLsemMl+qbK8QG/WC6myfSIE++mCdkikXLXTx9o8/LGVG5nsKa+VyDYU7u3u53mcA=="],
+    "@nattui/react-components": ["@nattui/react-components@0.0.29", "", { "peerDependencies": { "react": "^18.0.0 || ^19.0.0", "react-dom": "^18.0.0 || ^19.0.0" } }, "sha512-bO0L2VY3hZ9jEqNY/C4i/Xo7mbNKiQXVQhWZLz5V2NOR50ec0e06ImjuT64MArEggy2vARaEBU5ZtgaAw+4ZUA=="],
 
     "@nattui/tailwind-colors": ["@nattui/tailwind-colors@0.0.4", "", {}, "sha512-oZYmwirSihPbKBGw4QI18djEaOd6ovQpADHxXcUqEWzLdbTP0z3+OrcNAKjxP5V35p1wCGCY2EcNq1idDSzhNA=="],
 
