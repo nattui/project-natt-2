@@ -4,7 +4,7 @@ import { Logotype } from "@/components/logotype"
 
 export function Topbar() {
   return (
-    <header className="fixed top-0 right-0 left-0 z-10 flex h-64 items-center border-gray-6 border-b bg-gray-2 px-16">
+    <header className="fixed top-0 right-0 left-0 z-10 flex h-64 items-center border-gray-4 border-b bg-gray-2 px-16">
       <div className="mx-auto flex w-full max-w-768 items-center justify-between">
         {/* Brand */}
         <Link

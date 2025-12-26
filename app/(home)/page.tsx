@@ -16,13 +16,13 @@ export default function HomePage() {
       {/* Section 1 */}
       <section className="flex flex-col px-16">
         <Spacer className="h-192" />
-        <h1 className="mx-auto text-center text-72 leading-[1.1] max-768:max-w-320 max-768:text-48">
+        <h1 className="mx-auto text-center text-96 leading-1 max-768:max-w-320 max-768:text-48">
           Software
           <br />
           Meets Design
         </h1>
         <Spacer className="h-16" />
-        <p className="mx-auto max-w-512 hyphens-none text-center text-[22px] max-768:text-18">
+        <p className="mx-auto max-w-576 hyphens-none text-center text-24 max-768:text-18">
           Design engineer crafting refined applications, interfaces, and experiences. Dreamer and
           doer.
         </p>
@@ -41,7 +41,7 @@ export default function HomePage() {
 
       {/* Section 2 */}
       <section className="d h-[2200px]">
-        <div className="sticky top-64 h-[calc(100dvh-64px)] w-[200px] border-gray-6 border-r bg-gray-2">
+        <div className="sticky top-64 h-[calc(100dvh-64px)] w-[200px] border-gray-4 border-r bg-gray-2">
           cat
         </div>
       </section>
