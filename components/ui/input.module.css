@@ -1,0 +1,22 @@
+.base {
+  flex-shrink: 0;
+  height: 40px;
+  padding: 0 12px;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: transparent;
+  outline-offset: 2px;
+  border-color: var(--color-gray-6);
+  border-style: solid;
+  border-width: 1px;
+}
+
+.base:focus {
+  /* outline-color: var(--color-gray-12); */
+  border-color: var(--color-gray-12);
+}
+
+.base:focus-visible {
+  outline-color: var(--color-primary-9);
+  border-color: var(--color-primary-9);
+}

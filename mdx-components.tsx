@@ -1,6 +1,12 @@
 import type { MDXComponents } from "mdx/types"
 
 const components: MDXComponents = {
+  code: (props) => (
+    <code
+      className="font-mono text-primary-11"
+      {...props}
+    />
+  ),
   h1: (props) => (
     <h1
       className="mb-16 text-36"
