@@ -10,7 +10,10 @@ export default function ResourcesLayout(props: PropsWithChildren) {
       <Spacer className="h-64" />
       <div className="mx-auto flex max-w-672 flex-col">
         {children}
-        <Input />
+        <Input
+          isValid={true}
+          placeholder="Enter your email"
+        />
       </div>
     </div>
   )
