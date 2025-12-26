@@ -16,7 +16,7 @@ export function Topbar() {
 
         <div className="flex items-center gap-x-8">
           <Link
-            className="font-500 hover:underline"
+            className="font-500 text-14 hover:underline"
             href="/blog"
           >
             Blog
