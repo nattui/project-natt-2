@@ -1,4 +1,4 @@
-import { Input, Label, Spacer } from "@nattui/react-components"
+import { Button, Input, Label, Spacer } from "@nattui/react-components"
 import type { MDXComponents } from "mdx/types"
 import type { ComponentProps } from "react"
 import { highlight } from "sugar-high"
@@ -10,6 +10,7 @@ const components: MDXComponents = {
       {...props}
     />
   ),
+  Button,
   code: (props) => <Code {...props} />,
   h1: (props) => (
     <h1
