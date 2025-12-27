@@ -1,4 +1,4 @@
-import { JetBrains_Mono as fontMono, Inter as fontSans } from "next/font/google"
+import { JetBrains_Mono as fontMono, Geist as fontSans } from "next/font/google"
 import localFont from "next/font/local"
 
 // Martina Plantijn 300
