@@ -4,6 +4,12 @@ import type { ComponentProps } from "react"
 import { highlight } from "sugar-high"
 
 const components: MDXComponents = {
+  a: (props) => (
+    <a
+      className="text-primary-9 underline hover:no-underline"
+      {...props}
+    />
+  ),
   code: (props) => <Code {...props} />,
   h1: (props) => (
     <h1
