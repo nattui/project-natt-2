@@ -1,6 +1,8 @@
 "use client"
 
-import { Carousel } from "motion-plus/react"
+import { IconArrowLeft, IconArrowRight } from "@nattui/icons-line"
+import { Button, Spacer } from "@nattui/react-components"
+import { Carousel, useCarousel } from "motion-plus/react"
 import trendingCoins from "@/app/test/trending.json"
 
 const trendingItems = trendingCoins.map((trendingCoin) => (
@@ -26,17 +28,21 @@ interface TrendingCoin {
 
 export function CarouselTrending() {
   return (
-    <section className="w-full px-16">
-      <Carousel
-        align="start"
-        axis="x"
-        gap={16}
-        items={trendingItems}
-        loop={false}
-        overflow
-        snap="page"
-      />
-    </section>
+    <>
+      <section className="w-full px-16">
+        <Carousel
+          align="start"
+          axis="x"
+          gap={16}
+          items={trendingItems}
+          loop={false}
+          overflow
+          snap="page"
+        >
+          <TrendingCarouselHeader />
+        </Carousel>
+      </section>
+    </>
   )
 }
 
@@ -89,4 +95,41 @@ function formatTrendingCoinMarketCap(value: number) {
     minimumFractionDigits: 2,
     notation: "compact",
   }).format(value)
+}
+
+function TrendingCarouselHeader() {
+  const { nextPage, prevPage, isNextActive, isPrevActive } = useCarousel()
+
+  return (
+    <>
+      <div className="mx-16 flex items-center justify-between">
+        <div className="flex flex-col">
+          <p className="font-500 text-18 text-gray-12">Trending Tokens</p>
+          <p className="font-400 text-14 text-gray-11">Latest market news</p>
+        </div>
+
+        <nav className="flex items-center gap-x-8">
+          <Button
+            iconOnly
+            isDisabled={!isPrevActive}
+            isRounded
+            onClick={prevPage}
+            variant="secondary"
+          >
+            <IconArrowLeft size={16} />
+          </Button>
+          <Button
+            iconOnly
+            isDisabled={!isNextActive}
+            isRounded
+            onClick={nextPage}
+            variant="secondary"
+          >
+            <IconArrowRight size={16} />
+          </Button>
+        </nav>
+      </div>
+      <Spacer className="h-12" />
+    </>
+  )
 }
