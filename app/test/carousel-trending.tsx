@@ -60,13 +60,13 @@ function CarouselTrendingItem(props: CarouselItemProps) {
       {/* Image */}
       <img
         alt={coin.name}
-        className="absolute top-0 left-0 h-full w-full object-cover pb-24"
+        className="absolute top-0 left-0 h-full w-full object-cover pb-16"
         draggable={false}
         src={coin.banner_uri ?? coin.image_uri}
       />
 
       {/* Content */}
-      <div className="absolute bottom-0 left-0 w-full bg-linear-to-b from-transparent to-75% to-black px-12 py-16">
+      <div className="absolute bottom-0 left-0 w-full bg-linear-to-b from-transparent to-75% to-black p-12">
         {/* Name & Symbol */}
         <div className="flex items-end gap-x-6">
           <p className="truncate font-500 text-16 text-white">{coin.name}</p>
