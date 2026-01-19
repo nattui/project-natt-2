@@ -107,9 +107,7 @@ function TrendingCarouselHeader() {
         {/* Title */}
         <div className="flex flex-col">
           <p className="font-500 text-18 text-gray-12">Trending Coins</p>
-          <p className="font-400 text-14 text-gray-11">
-            Top movers lighting up the market right now
-          </p>
+          <p className="font-400 text-14 text-gray-11">Market favorites trending coins</p>
         </div>
 
         {/* Pagination */}
