@@ -1,7 +1,7 @@
 "use client"
 
 import { IconArrowLeft, IconArrowRight } from "@nattui/icons-line"
-import { Button, Spacer } from "@nattui/react-components"
+import { Button } from "@nattui/react-components"
 import { Carousel, useCarousel } from "motion-plus/react"
 import trendingCoins from "@/app/test/trending.json"
 
@@ -29,10 +29,11 @@ interface TrendingCoin {
 export function CarouselTrending() {
   return (
     <>
-      <section className="w-full px-16">
+      <section className="flex w-full flex-col px-16">
         <Carousel
           align="start"
           axis="x"
+          className="order-2"
           gap={16}
           items={trendingItems}
           loop={false}
@@ -102,12 +103,16 @@ function TrendingCarouselHeader() {
 
   return (
     <>
-      <div className="mx-16 flex items-center justify-between">
+      <div className="order-1 mb-12 flex w-full items-center justify-between">
+        {/* Title */}
         <div className="flex flex-col">
-          <p className="font-500 text-18 text-gray-12">Trending Tokens</p>
-          <p className="font-400 text-14 text-gray-11">Latest market news</p>
+          <p className="font-500 text-18 text-gray-12">Trending Coins</p>
+          <p className="font-400 text-14 text-gray-11">
+            Top movers lighting up the market right now
+          </p>
         </div>
 
+        {/* Pagination */}
         <nav className="flex items-center gap-x-8">
           <Button
             iconOnly
@@ -129,7 +134,6 @@ function TrendingCarouselHeader() {
           </Button>
         </nav>
       </div>
-      <Spacer className="h-12" />
     </>
   )
 }
