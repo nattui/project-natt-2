@@ -29,6 +29,12 @@ export function Topbar() {
           >
             Checklist (WIP)
           </Link>
+          <Link
+            className="font-500 text-14 hover:underline"
+            href="/test"
+          >
+            Test
+          </Link>
         </nav>
       </div>
     </header>

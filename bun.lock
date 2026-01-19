@@ -11,9 +11,10 @@
         "@nattui/icons-line": "npm:@central-icons-react/round-outlined-radius-1-stroke-2@1.1.94",
         "@nattui/react-components": "0.0.34",
         "@nattui/tailwind-colors": "0.0.7",
-        "@nattui/tailwind-exact": "0.0.3",
+        "@nattui/tailwind-exact": "0.0.5",
         "@next/mdx": "16.1.3",
         "gray-matter": "4.0.3",
+        "motion-plus": "https://api.motion.dev/registry.tgz?package=motion-plus&version=2.0.2&token=cba5b55a7ac1de71565e9b54fd58bd7e63391dde41c2f2f812de4aa5511e7d31",
         "next": "16.1.3",
         "react": "19.2.3",
         "react-dom": "19.2.3",
@@ -152,7 +153,7 @@
 
     "@nattui/tailwind-colors": ["@nattui/tailwind-colors@0.0.7", "", {}, "sha512-DDXJ5fA+iSfxzJxvAMatAdUYNLU+8OtNV6dLJrl2guQArhlzX/b6JT55aHlrhOXEIeE4Ff2ZA95XA2QuGC83WQ=="],
 
-    "@nattui/tailwind-exact": ["@nattui/tailwind-exact@0.0.3", "", {}, "sha512-1Lxk4UbUoBDTQfFpSKJiSUfAnZJpJH+OFSF1YDPAhgrA7+mNvZb0f/2skwfE+aa/BdFjk/buOzg5zbLxXnlEOw=="],
+    "@nattui/tailwind-exact": ["@nattui/tailwind-exact@0.0.5", "", {}, "sha512-4uUI/ijBcaibK44dV77xNkfMxKo/OfAxZg/B2m/5Hi1uw16Z30uHr04WFPj55eMFUyVJNYSG2mKSpODWzeDGQw=="],
 
     "@next/env": ["@next/env@16.1.3", "", {}, "sha512-BLP14oBOvZWXgfdJf9ao+VD8O30uE+x7PaV++QtACLX329WcRSJRO5YJ+Bcvu0Q+c/lei41TjSiFf6pXqnpbQA=="],
 
@@ -300,6 +301,8 @@
 
     "extend-shallow": ["extend-shallow@2.0.1", "", { "dependencies": { "is-extendable": "^0.1.0" } }, "sha512-zCnTtlxNoAiDc3gqY2aYAWFx7XWWiasuF2K8Me5WbN8otHKTUKBwjPtNpRs/rbUZm7KxWAaNj7P1a/p52GbVug=="],
 
+    "framer-motion": ["framer-motion@12.27.0", "", { "dependencies": { "motion-dom": "^12.27.0", "motion-utils": "^12.24.10", "tslib": "^2.4.0" }, "peerDependencies": { "@emotion/is-prop-valid": "*", "react": "^18.0.0 || ^19.0.0", "react-dom": "^18.0.0 || ^19.0.0" }, "optionalPeers": ["@emotion/is-prop-valid", "react", "react-dom"] }, "sha512-gJtqOKEDJH/jrn0PpsWp64gdOjBvGX8hY6TWstxjDot/85daIEtJHl1UsiwHSXiYmJF2QXUoXP6/3gGw5xY2YA=="],
+
     "graceful-fs": ["graceful-fs@4.2.11", "", {}, "sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ=="],
 
     "gray-matter": ["gray-matter@4.0.3", "", { "dependencies": { "js-yaml": "^3.13.1", "kind-of": "^6.0.2", "section-matter": "^1.0.0", "strip-bom-string": "^1.0.0" } }, "sha512-5v6yZd4JK3eMI3FqqCouswVqwugaA9r4dNZB1wwcmrD02QkV5H0y7XBQW8QwQqEaZY1pM9aqORSORhJRdNK44Q=="],
@@ -433,6 +436,16 @@
     "micromark-util-symbol": ["micromark-util-symbol@2.0.1", "", {}, "sha512-vs5t8Apaud9N28kgCrRUdEed4UJ+wWNvicHLPxCa9ENlYuAY31M0ETy5y1vA33YoNPDFTghEbnh6efaE8h4x0Q=="],
 
     "micromark-util-types": ["micromark-util-types@2.0.2", "", {}, "sha512-Yw0ECSpJoViF1qTU4DC6NwtC4aWGt1EkzaQB8KPPyCRR8z9TWeV0HbEFGTO+ZY1wB22zmxnJqhPyTpOVCpeHTA=="],
+
+    "motion": ["motion@12.27.0", "", { "dependencies": { "framer-motion": "^12.27.0", "tslib": "^2.4.0" }, "peerDependencies": { "@emotion/is-prop-valid": "*", "react": "^18.0.0 || ^19.0.0", "react-dom": "^18.0.0 || ^19.0.0" }, "optionalPeers": ["@emotion/is-prop-valid", "react", "react-dom"] }, "sha512-5/WbUMUV0QPOlgimOKJRhKwE+/pIHBI38SVgEpsfadOa5lYDgkgJAEav7KqNahdX3i3xkvogD5JR4K41w+9Hzw=="],
+
+    "motion-dom": ["motion-dom@12.27.0", "", { "dependencies": { "motion-utils": "^12.24.10" } }, "sha512-oDjl0WoAsWIWKl3GCDxmh7GITrNjmLX+w5+jwk4+pzLu3VnFvsOv2E6+xCXeH72O65xlXsr84/otiOYQKW/nQA=="],
+
+    "motion-plus": ["motion-plus@https://api.motion.dev/registry.tgz?package=motion-plus&version=2.0.2&token=cba5b55a7ac1de71565e9b54fd58bd7e63391dde41c2f2f812de4aa5511e7d31", { "dependencies": { "motion": "^12.23.24", "motion-plus-dom": "^2.0.2", "motion-utils": "^12.23.6" }, "peerDependencies": { "react": "^18.0.0 || ^19.0.0", "react-dom": "^18.0.0 || ^19.0.0" }, "optionalPeers": ["react", "react-dom"] }],
+
+    "motion-plus-dom": ["motion-plus-dom@2.1.0", "", { "dependencies": { "motion": "^12.23.24", "motion-dom": "^12.23.23", "motion-utils": "^12.23.6" } }, "sha512-xhzZLsbcXFUkfjwYfyCAEjf6bkob0oOqD7hUQrv5ll0XW4LLIkWAEXaqV3NJl5vEpXIzH7gJv5Fd5f/QjaW0Ew=="],
+
+    "motion-utils": ["motion-utils@12.24.10", "", {}, "sha512-x5TFgkCIP4pPsRLpKoI86jv/q8t8FQOiM/0E8QKBzfMozWHfkKap2gA1hOki+B5g3IsBNpxbUnfOum1+dgvYww=="],
 
     "ms": ["ms@2.1.3", "", {}, "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA=="],
 
